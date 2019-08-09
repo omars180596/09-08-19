@@ -1,0 +1,271 @@
+<div class="page" data-name="placa2">
+  <!-- Fixed/Dynamic Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">Sistema Integral para Infracciones</div>
+    </div>
+
+  </div>
+   <div class="page-content page-content2">
+    <div class="block">
+
+    <div class="center">
+        <h3 class="white">Indique lo que se pide</h3>
+    </div>
+
+
+     <div class="row">
+       <span class="col button button button-raised button-fill red" id="time"></span>
+    </div>
+
+    <div class="row"> 
+    FOLIO:<input  type="text" id="_folio"  name="_folio" value= "" />
+    </div>
+
+     <div class="row">
+     <input type="text" id="_fecha"  name="_fecha" class="form-control" value="" readonly/>
+     </div>
+
+     <div class="row3">
+<select name="Subject" id="_causa" onchange="salta(this.form)">
+<option selected> Causa de la Infraccion
+<option value="Estacionarse en doble Fila<br>
+  Articulo 67 | 4 UMAS">Estacionarse en doble Fila
+
+<option value="Estacionarse en lugar no permitido <br>
+  Articulo 67 | 4 UMAS">Estacionarse en lugar no permitido
+<option value="Manejar a exceso de velocidad <br> Articulo 98 | 12 UMAS ">Manejar a exceso de velocidad
+<option value="No respetar el semaforo  <br> Articulo 47 | 5 UMAS">No respetar el semaforo
+<option value="Vuelta en lugar prohibido <br> Articulo 37 | 4 UMAS">Vuelta en lugar prohibido 
+<option value="Circular en contraflujo <br> Articulo 37 | 4 UMAS">Circular en contraflujo
+<option value="Transitar sobre banquetas, en sentido contrario o invadir carril  <br> Articulo 100 | 12 UMAS">Transitar sobre banquetas, en sentido contrario o invadir carril  
+<option value="Invasion del paso peatonal <br> Articulo 67 | 4 UMAS  ">Invasion del paso peatonal
+<option value="Falta de uso del casco <br> Articulo 106 | 7 UMAS ">Falta de uso del casco
+<option value="Exceder el numero de personas <br> Articulo 106 | 7 UMAS">Exceder el numero de personas
+<option value="Transportar a menores de 4 años <br> Articulo 106 | 7 UMAS">Transportar a menores de 4 años
+<option value="Transportar a menores de 6 años <br> Articulo 106 | 7 UMAS">Transportar a menores de 6 años
+<option value="Uso de distractores <br> Articulo 98 | 12 UMAS ">Uso de distractores
+  <option value="Conducir de forma peligrosa o negligente <br> Articulo 100 | 20 UMAS ">Conducir de forma peligrosa o negligente
+</select>
+</div>
+<br>
+   <div class="row3">
+<select name="Subject" id="_causa2" onchange="salta(this.form)">
+<option selected> 
+<option value="<b> Falta cometida 2:</b><br>Estacionarse en doble Fila<br>
+  Articulo 67 <br><br> <b> Costo: </b>  | 4 UMAS">Estacionarse en doble Fila
+
+<option value="<b> Falta cometida 2:</b><br> <br>Estacionarse en lugar no permitido <br>
+  Articulo 67 <br><br> <b> Costo: </b>  | 4 UMAS">Estacionarse en lugar no permitido
+<option value="<b>Falta cometida 2:</b><br> <br>Manejar a exceso de velocidad <br> Articulo 98 <br>  <br><b>Costo:</b>| 12 UMAS ">Manejar a exceso de velocidad
+<option value="<b>Falta cometida 2:</b> <br>  <br>No respetar el semaforo  <br> Articulo 47 <br><br> <b> Costo:</b>| 5 UMAS">No respetar el semaforo
+<option value="<b>Falta cometida 2:</b>  <br> <br>Vuelta en lugar prohibido <br> Articulo 37 <br><br> <b> Costo:</b> | 4 UMAS">Vuelta en lugar prohibido 
+<option value="<b>Falta cometida 2:</b>  <br> <br>Circular en contraflujo <br> Articulo 37 <br> <br><b> Costo:</b> | 4 UMAS">Circular en contraflujo
+<option value="<b>Falta cometida 2: </b> <br> <br>Transitar sobre banquetas, en sentido contrario o invadir carril  <br> Articulo 100 <br><br><b> Costo: </b> | 12 UMAS">Transitar sobre banquetas, en sentido contrario o invadir carril  
+<option value="<b>Falta cometida 2:</b> <br> <br>Invasion del paso peatonal <br> Articulo 67<br><br><b> Costo:</b> | 4 UMAS  ">Invasion del paso peatonal
+<option value="<b>Falta cometida 2: </b> <br> <br>Falta de uso del casco <br> Articulo 106 <br> <br> <b>Costo:</b> | 7 UMAS ">Falta de uso del casco
+<option value="<b>Falta cometida 2:</b> <br> <br>Exceder el numero de personas <br> Articulo 106 <br> <br> <b> Costo:</b>| 7 UMAS">Exceder el numero de personas
+<option value="<b>Falta cometida 2:</b> <br> <br>Transportar a menores de 4 años<br> Articulo 106 <br> <br> <b> Costo:</b>| 7 UMAS">Transportar a menores de 4 años
+<option value="<b>Falta cometida 2:</b> <br> <br>Transportar a menores de 6 años  <br>Articulo 106 <br><br> <b> Costo:</b>| 7 UMAS">Transportar a menores de 6 años
+<option value="<b>Falta cometida 2:</b> <br> <br>Uso de distractores <br> Articulo 98 <br> <br> <b> Costo: | 12 UMAS ">Uso de distractores
+<option value="<b>Falta cometida 2:</b> <br> <br>Conducir de forma peligrosa o negligente <br> Articulo 100 <br> <br> <b> Costo:</b> | 20 UMAS ">Conducir de forma peligrosa o negligente
+</select>
+</option>
+</div>
+<br>
+  <div class="row3">
+<select name="Subject" id="_lugar" onchange="salta(this.form)">
+<option selected> Lugar de la infraccion
+<option value="Francisco Zarabia">Francisco Zarabia
+<option value="Cuauhtemoc">Cuauhtemoc
+<option value="Moctezuma">Moctezuma
+<option value="Francisco I Madero">Francisco I Madero
+<option value="Miguel Hidalgo">Miguel Hidalgo
+<option value="Boulevard Emilio Sanchez Piedras">Boulevard Emilio Sanchez Piedras
+<option value="Boulevard la Libertad">Boulevard la Libertad
+<option value="Manuel Avila Camacho">Manuel Avila Camacho
+<option value="Aquiles Serdan">Aquiles Serdan
+<option value="Avenida Juarez">Avenida Juarez
+<option value="Avenida 5 de Mayo">Avenida 5 de Mayo
+</select>
+</div>
+<br>
+      <div class="row3">
+     <SELECT name="Subject" id="_caracteristicas" onchange="salta(this.form)">
+     <option selected> Caracteristicas de la unidad
+  <optgroup label ="Italika">
+    <option value="Motoneta Italika DS125">Motoneta Italika DS125</option>
+    <option value="Motoneta Italika X125 GTS">Motoneta Italika X125 GTS</option>
+    <option value="Motoneta Italika DS150">Motoneta Italika DS150</option>
+    <option value="Motoneta Italika DS150G">Motoneta Italika DS150G</option>
+    <option value="Motoneta Italika DSG 125">Motoneta Italika DSG 125</option>
+    <option value="Motoneta Italika Modena 175">Motoneta Italika Modena 175</option>
+    <option value="Motoneta Italika W150">Motoneta Italika W150</option>
+    <option value="Motoneta Italika Modena 150">Motoneta Italika Modena 150</option>
+    <option value="Motoneta Italika X150 G">Motoneta Italika X150 G</option>
+    <option value="Motoneta Italika WS 175">Motoneta Italika WS 175</option>
+    <option value="Motoneta Italika D125">Motoneta Italika D125</option>
+    <option value="Motoneta Italika WS150">Motoneta Italika WS150</option>
+    <option value="Motoneta Italika WS150 ">Motoneta Italika WS150 </option>
+    <option value="Motoneta Italika X125 GTS">Motoneta Italika X125 GTS</option>
+    <option value="Motoneta Italika Vitalia 150">Motoneta Italika Vitalia 150</option>
+    <option value="Motoneta Italika W150">Motoneta Italika W150</option>
+    <option value="Motoneta Italika D150">Motoneta Italika D150</option>
+    <option value="Motoneta Italika Vitalia 125">Motoneta Italika Vitalia 125</option>
+    <option value="Motoneta Italika WS175 SPORT">Motoneta Italika WS175 SPORT</option>
+    <option value="Motoneta Italika XW150">Motoneta Italika XW150</option>
+    <option value="Motoneta Italika XS150">Motoneta Italika XS150</option>
+    <option value="Motoneta Italika WS150SPORT">Motoneta Italika WS150SPORT</option>
+    <option value="Motoneta ItalikaTRN 150"> Motoneta ItalikaTRN 150</option>
+    <option value="Motoneta Italika X150">  Motoneta Italika X150</option> 
+    <option value="Motoneta Italika X150D">Motoneta Italika X150D</option>
+    <option value="Motoneta Italika DSG 125"> Motoneta Italika DSG 125</option>
+    <option value="Motoneta Italika X125 "> Motoneta Italika X125 </option>
+    <option value="Motoneta Italika X125GTS">Motoneta Italika X125GTS</option>
+    <option value="Motocicleta de trabajo FT 250 TS">Motocicleta de trabajo FT 250 TS</option>
+    <option value="Motocicleta de trabajo FT180 TS">Motocicleta de trabajo FT180 TS</option>
+    <option value="Motocicleta de trabajo FT200 TS">Motocicleta de trabajo FT200 TS</option>
+    <option value="Motocicleta de trabajo DT 200 SPORT">Motocicleta de trabajo DT 200 SPORT</option>
+    <option value="Motocicleta de trabajo FT150">Motocicleta de trabajo FT150</option>
+  </optgroup>
+  <optgroup label ="CHOPPER ">
+    <option value="Chopper TC 250">Chopper TC 250 </option>
+    <option value="Chopper TC 200">Chopper TC 200 </option>
+    <option value="Chopper RC200">Chopper RC200 </option>
+    <option value="Chopper RC150">Chopper RC150 </option>
+  </optgroup>
+
+  <optgroup label ="Dinamo">
+    <option value="Dinamo Rayo 175"> Dinamo Rayo 175</option>
+    <option value="Dinamo Scorpion 250">Dinamo Scorpion 250</option>
+    <option value=" Dinamo U5 150">Dinamo U5 150</option>
+    <option value=" Dinamo Scorpion 250">Dinamo Scorpion 250</option>
+    <option value="Dinamo Fenix 150">Dinamo Fenix 150</option>
+    <option value="Dinamo Rayo 175">Dinamo Rayo 175</option>
+    <option value="Dinamo DSSR 250">Dinamo DSSR 250</option>
+    <option value="Dinamo Fenix 150">Dinamo Fenix 150</option>
+    <option value="Dinamo Renegada 250">Dinamo Renegada 250</option>
+    <option value="Dinamo Custom">Dinamo Custom</option>
+    <option value="Dinamo Jessy-R">Dinamo Jessy-R</option>
+    <option value="Dinamo Renegada 250">Dinamo Renegada 250</option>
+    <option value="Dinamo Custom">Dinamo Custom</option>
+    <option value="Dinamo Adventure Elite">Dinamo Adventure Elite</option>
+    <option value=" Dinamo Renegada 250">Dinamo Renegada 250</option>
+    <option value=" Dinamo Custom"> Dinamo Custom</option>
+    <option value="Dinamo Chopper">Dinamo Chopper</option>
+    <option value="Dinamo Rayo Elite">Dinamo Rayo Elite</option>
+    <option value=" Dinamo Rayo Elite">Dinamo Rayo Elite</option>
+    <option value="Dinamo Super Rocky">Dinamo Super Rocky</option>
+    <option value="Dinamo Rayo Elite">Dinamo Rayo Elite</option>
+   <option value="Dinamo Xtreme Rocky">Dinamo Xtreme Rocky</option>
+   <option value="Dinamo U5 150">Dinamo U5 150</option>
+   <option value="Dinamo Rayo 175">Dinamo Rayo 175</option>
+  </optgroup>
+  
+
+
+  <optgroup label ="Audi">
+    <option value="Audi 80">80</option>
+    <option value="Audi 100">100</option>
+    <option value="Audi A1">A1</option>
+    <option value="Audi A2">A2</option>
+    <option value="Audi A3">A3</option>
+    <option value="Audi A4">A4</option>
+    <option value="Audi A5">A5</option>
+    <option value="Audi A6">A6</option>Motoneta Italika XW150
+    <option value="Audi A6 allroad quattro">A6 allroad quattro</option>
+    <option value="Audi A1">A1</option>
+  </optgroup>
+  <optgroup label ="Audi">
+    <option value="Audi 80">80</option>
+    <option value="Audi 100">100</option>
+    <option value="Audi A1">A1</option>
+    <option value="Audi A2">A2</option>
+    <option value="Audi A3">A3</option>
+    <option value="Audi A4">A4</option>
+    <option value="Audi A5">A5</option>
+    <option value="Audi A6">A6</option>Motoneta Italika XW150
+    <option value="Audi A6 allroad quattro">A6 allroad quattro</option>
+    <option value="Audi A1">A1</option>
+  </optgroup>
+  <optgroup label ="Audi">
+    <option value="Audi 80">80</option>
+    <option value="Audi 100">100</option>
+    <option value="Audi A1">A1</option>
+    <option value="Audi A2">A2</option>
+    <option value="Audi A3">A3</option>
+    <option value="Audi A4">A4</option>
+    <option value="Audi A5">A5</option>
+    <option value="Audi A6">A6</option>Motoneta Italika XW150
+    <option value="Audi A6 allroad quattro">A6 allroad quattro</option>
+    <option value="Audi A1">A1</option>
+  </optgroup>
+  <optgroup label ="Audi">
+    <option value="Audi 80">80</option>
+    <option value="Audi 100">100</option>
+    <option value="Audi A1">A1</option>
+    <option value="Audi A2">A2</option>
+    <option value="Audi A3">A3</option>
+    <option value="Audi A4">A4</option>
+    <option value="Audi A5">A5</option>
+    <option value="Audi A6">A6</option>Motoneta Italika XW150
+    <option value="Audi A6 allroad quattro">A6 allroad quattro</option>
+    <option value="Audi A1">A1</option>
+  </optgroup>
+</select>
+</div>
+<br>
+     <div class="row">
+     <input type="text" name="Subject" placeholder="Numero de Placas " id="_placa" ></input>
+     </div>
+    <div class="row">
+     <input type="text" name="Subject" placeholder="Nombre del conductor" id="_persona" ></input>
+     </div>
+<div class="row3">
+<select name="Subject" id="_garantia" onchange="salta(this.form)">
+<option selected> Garantia
+<option value="Licencia de Conducir">Licencia de Conducir
+<option value="Placa">Placa
+<option value="Automovil">Automovil
+   <option value="Tarjeta de Circulacion">Tarjeta de Circulacion
+</select>
+</div>
+<br>
+<div class="row">
+            
+            <a id="img" class="col button button button-raised button-fill red" href="" onclick="capturePhoto();">
+            <center><i class="fa fa-camera fa-5x"></i></center>
+                Tomar Foto
+            </a>
+
+          </div>
+          
+          <div class="row">
+          <center><img style="display:none;width:50%;height:50%;" id="smallImage" src="" /></center>
+          
+          </div>
+          
+     
+
+
+        <div class="row">
+          <button class="col button button button-raised button-fill red" onclick="app.placas()"><i class="app-icon icon-user-plus">&#xe801;</i>enviar</button>
+        </div> 
+        <div class="row">
+          <button class="col button button button-raised button-fill red" onclick="app.RegisterAccess2()"><i class="app-icon icon-user-plus">&#xe801;</i>Cancelar</button>
+        </div>
+
+    </form> 
+          
+    
+    </div>
+  </div>
+</div>
+
+</div>
